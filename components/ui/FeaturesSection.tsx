@@ -42,7 +42,7 @@ export function FeaturesSection() {
     },
   ];
   return (
-    <div className="relative z-20 lg:py-[100px] max-w-5xl mx-auto bg-black">
+    <div className="relative z-20 lg:pb-[100px] max-w-6xl mx-auto bg-black">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
           Packed with thousands of features
@@ -111,7 +111,7 @@ export const SkeletonOne = () => {
       <div className="w-full p-5 mx-auto dark:bg-neutral-900 shadow-2xl group">
         <div>
           <Image
-            src="/linear.webp"
+            src="/destination_2.png"
             alt="header"
             width={800}
             height={800}
@@ -142,7 +142,7 @@ export const SkeletonThree = () => {
             alt="header"
             width={800}
             height={800}
-            className="w-full h-[300px] aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+            className="w-full h-[350px] aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
           />
         </div>
       </div>
@@ -227,7 +227,7 @@ export const SkeletonTwo = () => {
 export const SkeletonFour = () => {
   return (
     <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
-      <Globe className="absolute -right-10 md:-right-10  -bottom-80 md:-bottom-72" />
+      <Globe className="absolute -right-10 md:-right-10 lg:-right-32 -bottom-80 md:-bottom-72 " />
     </div>
   );
 };
