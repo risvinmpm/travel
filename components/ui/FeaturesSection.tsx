@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -16,41 +16,43 @@ export function FeaturesSection() {
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
+        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800"
     },
     {
       title: "Capture pictures with AI",
       description:
         "Capture stunning photos effortlessly using our advanced AI technology.",
       skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
+      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800"
     },
     {
       title: "Watch our AI on YouTube",
       description:
         "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
       skeleton: <SkeletonThree />,
-      className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
+      className: "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800"
     },
     {
       title: "Deploy in seconds",
       description:
         "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
-    },
+      className: "col-span-1 lg:col-span-3 border-b lg:border-none"
+    }
   ];
   return (
     <div className="relative z-20 lg:pb-[100px] max-w-6xl mx-auto bg-black">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
+          Awesome Destinations
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
+        <p className="text-sm lg:text-base max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+          Integer sollicitudin ligula non enim sodales, non lacinia nunc ornare.
+          Sed commodo tempor dapibus. Duis convallis turpis in tortor volutpat,
+          eget rhoncus nisi fringilla. Phasellus ornare risus in euismod varius
+          nullam feugiat ultrices. Sed condimentum est libero, aliquet iaculis
+          diam bibendum ullamcorper.
         </p>
       </div>
 
@@ -71,7 +73,7 @@ export function FeaturesSection() {
 
 const FeatureCard = ({
   children,
-  className,
+  className
 }: {
   children?: React.ReactNode;
   className?: string;
@@ -135,7 +137,6 @@ export const SkeletonThree = () => {
     >
       <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
-        
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
           <Image
             src="https://assets.aceternity.com/fireship.jpg"
@@ -156,20 +157,20 @@ export const SkeletonTwo = () => {
     "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   ];
 
   const imageVariants = {
     whileHover: {
       scale: 1.1,
       rotate: 0,
-      zIndex: 100,
+      zIndex: 100
     },
     whileTap: {
       scale: 1.1,
       rotate: 0,
-      zIndex: 100,
-    },
+      zIndex: 100
+    }
   };
   return (
     <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
@@ -179,7 +180,7 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             key={"images-first" + idx}
             style={{
-              rotate: Math.random() * 20 - 10,
+              rotate: Math.random() * 20 - 10
             }}
             whileHover="whileHover"
             whileTap="whileTap"
@@ -200,7 +201,7 @@ export const SkeletonTwo = () => {
           <motion.div
             key={"images-second" + idx}
             style={{
-              rotate: Math.random() * 20 - 10,
+              rotate: Math.random() * 20 - 10
             }}
             variants={imageVariants}
             whileHover="whileHover"
@@ -255,12 +256,12 @@ export const Globe = ({ className }: { className?: string }) => {
       glowColor: [1, 1, 1],
       markers: [
         { location: [37.7595, -122.4367], size: 0.03 },
-        { location: [40.7128, -74.006], size: 0.1 },
+        { location: [40.7128, -74.006], size: 0.1 }
       ],
       onRender: (state) => {
         state.phi = phi;
         phi += 0.01;
-      },
+      }
     });
 
     return () => {
